@@ -14,7 +14,7 @@
                 <div class="card">
                     <div class="card-content">
                         <h1 class="title">
-                            Forgot Password
+                            Mot de passe oublié
                         </h1>
                         <form class="" action="{{route('password.email')}}" method="POST" role="form">
                             {{csrf_field()}}
@@ -22,7 +22,7 @@
                             
                             <label for="email" class="label">Email Address</label>
                             <p class="control">
-                    <input class="input is-medium {{$errors->has('email') ? 'is-danger' : ''}}" type="text" name="email" 
+                    <input class="input {{$errors->has('email') ? 'is-danger' : ''}}" type="text" name="email" 
                             id="email" placeholder="name@exemple.com" value="{{old('email')}}">
                             </p>
 
@@ -39,7 +39,7 @@
                 </div>
                 <h5 class="has-text-centered m-t-20"><a href="{{route('login')}}" class="is-muted">
                 <i class="fa fa-caret-left m-r-10" aria-hidden="true"></i>
-                Back to Login</a></h5>
+                Retour a la page de connexion</a></h5>
             </div>
         </div>
 
