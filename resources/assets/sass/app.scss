@@ -1,6 +1,6 @@
 
 // Fonts
-//@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
 // Variables
 @import "variables";
@@ -14,3 +14,11 @@
 
 // buefy
 @import "node_modules/buefy/src/scss/buefy";
+
+
+// customs sass pages
+
+@import "overrides";
+@import "helpers";
+//@import "manage";
+@import "styles";

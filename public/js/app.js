@@ -1043,6 +1043,12 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_0_buefy___default.a);
 
 //Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
+var app = new Vue({
+    el: '#app',
+    data: {}
+
+});
+
 /***/ }),
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
