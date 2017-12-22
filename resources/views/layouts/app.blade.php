@@ -8,19 +8,22 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Devouee Pour Christ</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @yield('styles')
 </head>
-<body style="background-color:#f5f5f0">
+<body style="background-color:#f5f5f0;">
 
-   @include('_includes.nav.main')
-   
-<div id="app">    
-        @yield('content')
-</div>
+    @include('_includes.nav._main')
+
+    <div id="app">
+      @yield('content')
+    </div>
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    @yield('scripts')
 </body>
 </html>

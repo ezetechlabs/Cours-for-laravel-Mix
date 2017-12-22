@@ -1,7 +1,7 @@
-<nav class="navbar has-navbar-fixed-bottom is-warning">
+<nav class="navbar has-navbar-fixed-bottom is-info">
               <div class="navbar-brand">
                 <a class="navbar-item" href="https://bulma.io">
-                  <img src="https://bulma.io/images/bulma-logo.png" alt="Devouee Pour Christ" width="152" height="28">
+                  <img src="images/2.png" alt="Devouee Pour Christ" width="152" height="28">
                 </a>
                 <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
                   <span></span>
@@ -59,9 +59,9 @@
                         <span class="icon"><i class="fa fa-bell m-r-10" aria-hidden="true"></i></span>
                         Notifications
                       </a>
-                      <a class="navbar-item" href="#">
+                      <a class="navbar-item" href="{{route('manage.dashboard')}}">
                         <span class="icon"><i class="fa fa-cog m-r-10" aria-hidden="true"></i></span>
-                        Settings
+                        Manage
                       </a>
                       <hr class="navbar-divider">
                           <a class="navbar-item" href="{{ route('logout') }}"
@@ -74,11 +74,11 @@
                                 {{ csrf_field() }}
                               </form>
                     </div>
-                  </div>
+          </div>
 
                       @endif
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

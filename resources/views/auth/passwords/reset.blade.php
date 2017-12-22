@@ -1,7 +1,5 @@
 @extends('layouts.app')
-
 @section('content')
-
 @if (session('status'))
         <div class="notification is-success">
                 {{ session('status') }}

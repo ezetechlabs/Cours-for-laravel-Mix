@@ -8,19 +8,20 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Devouee Pour Christ</title>
+    <title>Devouee - MANAGEMENT</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body style="background-color:#f5f5f0">
+<body>
 
-   @include('_includes.nav.main')
-   @include('_includes.nav.manage')
-   
-<div id="app">    
-        @yield('content')
-</div>
+    @include('_includes.nav._main')
+    @include('_includes.nav._manage')
+
+    <div class="management-area" id="app" ">
+      @yield('content')
+    </div>
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
