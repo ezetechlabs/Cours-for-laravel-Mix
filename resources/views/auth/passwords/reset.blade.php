@@ -23,6 +23,9 @@
                             <p class="control">
                     <input class="input {{$errors->has('email') ? 'is-danger' : ''}}" type="text" name="email" 
                             id="email" placeholder="name@exemple.com" value="{{old('email')}}" required>
+                             <span class="icon is-small is-left">
+                            <i class="fa fa-envelope"></i>
+                            </span>
                             </p>
 
                             @if($errors->has('email'))

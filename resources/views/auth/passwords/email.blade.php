@@ -20,6 +20,12 @@
                             <p class="control">
                     <input class="input {{$errors->has('email') ? 'is-danger' : ''}}" type="text" name="email" 
                             id="email" placeholder="name@exemple.com" value="{{old('email')}}">
+                            <span class="icon is-small is-left">
+                            <i class="fa fa-envelope"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                            <i class="fa fa-check"></i>
+                            </span>
                             </p>
 
                             @if($errors->has('email'))
